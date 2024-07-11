@@ -6,3 +6,9 @@ rs.initiate({
     { _id: 2, host: "node3:27017" }
   ]
 })
+use admin
+db.createUser({
+  user: "admin",
+  pwd: "your_secure_password",
+  roles: [{ role: "root", db: "admin" }]
+})
