@@ -48,8 +48,8 @@ processManagement:
   fork: true  # Forks the process and run MongoDB in the background
 
 # security settings
-security:
-  authorization: enabled  # Enable Role-Based Access Control (RBAC)
+#security:
+#  authorization: enabled  # Enable Role-Based Access Control (RBAC)
 
 # replication options
 replication:
