@@ -28,8 +28,9 @@ cat <<EOF | sudo tee /etc/mongod.conf
 # Where and how to store data.
 storage:
   dbPath: /data/db
-  journal:
-    enabled: true
+# Changed in 6.1 MongoDB always enables journaling. As a result, MongoDB removes the storage.journal.enabled option
+#  journal:
+#    enabled: true
 
 # where to write logging data.
 systemLog:
