@@ -5,6 +5,13 @@ NODE1_PRIVATE_IP="node1-private-ip"
 NODE2_PRIVATE_IP="node2-private-ip"
 NODE3_PRIVATE_IP="node3-private-ip"
 
+#Todo:
+#create xfs on sdb
+#mount sdb to /data
+#create /data/db director
+#create mongod user
+#chown mongod:mongod /data/db
+
 # Import the MongoDB public GPG key
 sudo rpm --import https://www.mongodb.org/static/pgp/server-7.0.asc
 
