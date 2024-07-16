@@ -1,2 +1,4 @@
 # create user, set up replset, import sample data
-mongosh --host ${"rs0"} setupreplset.js
+mongosh setupreplset.js
+curl -L -o sample-data 'https://drive.google.com/uc?export=download&id=1mlFYUbABFxfww8YeoLkX4Rpef9dMljU0
+mongorestore --username admin --password <pwd> sample-data 
