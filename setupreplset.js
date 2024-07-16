@@ -13,3 +13,4 @@ db.createUser({
   pwd: passwordPrompt(),
   roles: [{ role: "root", db: "admin" }]
 })
+quit
