@@ -5,15 +5,6 @@ NODE1_PRIVATE_IP="node1-private-ip"
 NODE2_PRIVATE_IP="node2-private-ip"
 NODE3_PRIVATE_IP="node3-private-ip"
 
-#Todo:
-#create xfs on sdb
-#mount sdb to /data
-#create /data/db director
-#create mongod user
-#chown mongod:mongod /data/db
-#enable authorization
-#disable transparent huge pages
-
 sudo adduser mongod
 sudo groupadd mongod
 
