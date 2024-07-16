@@ -7,6 +7,8 @@ NODE3_PRIVATE_IP="node3-private-ip"
 
 sudo adduser mongod
 
+sudo chown mongod:mongod /opt/mongo-key
+
 sudo mkfs -t xfs /dev/xvdb
 sudo mkdir /data
 sudo mount /dev/xvdb /data
