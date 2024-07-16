@@ -9,6 +9,6 @@ rs.initiate({
 use admin
 db.createUser({
   user: "admin",
-  pwd: "your_secure_password",
+  pwd: passwordPrompt(),
   roles: [{ role: "root", db: "admin" }]
 })
