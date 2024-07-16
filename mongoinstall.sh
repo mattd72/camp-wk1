@@ -27,6 +27,9 @@ enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-7.0.asc
 EOF
 
+sudo systemctl daemon-reload
+sudo systemctl start disable-transparent-huge-pages
+
 # Install MongoDB Enterprise
 sudo yum install -y mongodb-enterprise
 
