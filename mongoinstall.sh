@@ -19,7 +19,7 @@ sudo chown mongod:mongod /data/db
 cat <<EOF | sudo tee /etc/yum.repos.d/mongodb-enterprise-7.0.repo
 [mongodb-enterprise-7.0]
 name=MongoDB Enterprise Repository
-baseurl=https://repo.mongodb.com/yum/amazon/2023/mongodb-enterprise/7.0/$basearch/
+baseurl=https://repo.mongodb.com/yum/amazon/2023/mongodb-enterprise/7.0/x86_64/
 gpgcheck=1
 enabled=1
 gpgkey=https://pgp.mongodb.com/server-7.0.asc
