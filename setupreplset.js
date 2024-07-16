@@ -6,7 +6,7 @@ rs.initiate({
     { _id: 2, host: "node3:27017" }
   ]
 })
-sleep(1000);
+sleep(120000);
 use admin
 db.createUser({
   user: "admin",
