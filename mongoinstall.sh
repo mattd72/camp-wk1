@@ -14,6 +14,10 @@ NODE3_PRIVATE_IP="node3-private-ip"
 #enable authorization
 #disable transparent huge pages
 
+sudo mkfs -t xfs /dev/xvdb
+sudo mkdir /data/db
+chown mongod:mongod /data/db
+
 # Import the MongoDB public GPG key
 sudo rpm --import https://www.mongodb.org/static/pgp/server-7.0.asc
 
