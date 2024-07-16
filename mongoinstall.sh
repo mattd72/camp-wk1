@@ -14,6 +14,9 @@ NODE3_PRIVATE_IP="node3-private-ip"
 #enable authorization
 #disable transparent huge pages
 
+sudo adduser mongod
+sudo groupadd mongod
+
 sudo mkfs -t xfs /dev/xvdb
 sudo mkdir /data/db
 chown mongod:mongod /data/db
@@ -73,6 +76,8 @@ replication:
 # replication:
 #   oplogSizeMB: 1024
 EOF
+
+sudo chown mongod:mongod /etc/mongod.conf
 
 cat << EOF | /etc/systemd/system/disable-transparent-huge-pages.service
 [Unit]
