@@ -57,6 +57,7 @@ processManagement:
 # security settings
 security:
   authorization: enabled  # Enable Role-Based Access Control (RBAC)
+  keyFile: /opt/mongo-keyfile
 
 # replication options
 replication:
