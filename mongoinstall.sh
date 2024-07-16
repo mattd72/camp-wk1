@@ -12,6 +12,7 @@ NODE3_PRIVATE_IP="node3-private-ip"
 #create mongod user
 #chown mongod:mongod /data/db
 #enable authorization
+#disable transparent huge pages
 
 # Import the MongoDB public GPG key
 sudo rpm --import https://www.mongodb.org/static/pgp/server-7.0.asc
