@@ -15,16 +15,15 @@ sudo chown mongod:mongod /data/db
 
 # Import the MongoDB public GPG key
 
-# Create a MongoDB repository file
+# Create a MongoDB repository file AL2023
 cat <<EOF | sudo tee /etc/yum.repos.d/mongodb-enterprise-7.0.repo
 [mongodb-enterprise-7.0]
 name=MongoDB Enterprise Repository
-baseurl=https://repo.mongodb.com/yum/amazon/2/mongodb-enterprise/7.0/x86_64/
+baseurl=https://repo.mongodb.com/yum/amazon/2023/mongodb-enterprise/7.0/$basearch/
 gpgcheck=1
 enabled=1
 gpgkey=https://pgp.mongodb.com/server-7.0.asc
 EOF
-
 
 # Install MongoDB Enterprise
 sudo yum install -y mongodb-enterprise
