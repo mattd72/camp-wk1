@@ -6,7 +6,6 @@ NODE2_PRIVATE_IP="node2-private-ip"
 NODE3_PRIVATE_IP="node3-private-ip"
 
 sudo adduser mongod
-sudo groupadd mongod
 
 sudo mkfs -t xfs /dev/xvdb
 sudo mkdir /data/db
