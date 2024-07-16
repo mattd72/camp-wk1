@@ -14,16 +14,15 @@ mkdir /data/db
 chown mongod:mongod /data/db
 
 # Import the MongoDB public GPG key
-sudo rpm --import https://www.mongodb.org/static/pgp/server-7.0.asc
 
 # Create a MongoDB repository file
-cat <<EOF | sudo tee /etc/yum.repos.d/mongodb-enterprise.repo
-[mongodb-enterprise]
+cat <<EOF | sudo tee /etc/yum.repos.d/mongodb-enterprise-7.0.repo
+[mongodb-enterprise-7.0]
 name=MongoDB Enterprise Repository
-baseurl=https://repo.mongodb.com/yum/amazon/2/mongodb-enterprise/7.0/x86_64/
+baseurl=https://repo.mongodb.com/yum/amazon/2/mongodb-enterprise/7.0/$basearch/
 gpgcheck=1
 enabled=1
-gpgkey=https://www.mongodb.org/static/pgp/server-7.0.asc
+gpgkey=https://pgp.mongodb.com/server-7.0.asc
 EOF
 
 
@@ -71,7 +70,7 @@ EOF
 
 sudo chown mongod:mongod /etc/mongod.conf
 
-cat << EOF | /etc/systemd/system/disable-transparent-huge-pages.service
+cat << EOF | sudo tee /etc/systemd/system/disable-transparent-huge-pages.service
 [Unit]
 Description=Disable Transparent Huge Pages (THP)
 DefaultDependencies=no
