@@ -10,8 +10,8 @@ sudo adduser mongod
 sudo mkfs -t xfs /dev/xvdb
 sudo mkdir /data
 sudo mount /dev/xvdb /data
-mkdir /data/db
-chown mongod:mongod /data/db
+sudo mkdir /data/db
+sudo chown mongod:mongod /data/db
 
 # Import the MongoDB public GPG key
 
