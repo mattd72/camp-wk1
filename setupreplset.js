@@ -5,7 +5,7 @@ rs.initiate({
     { _id: 1, host: "node2:27017" },
     { _id: 2, host: "node3:27017" }
   ]
-})
+});
 sleep(120000);
 use admin;
 db.createUser({
