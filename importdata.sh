@@ -1,3 +1,3 @@
-curl -L -o sample-data 'https://drive.google.com/uc?export=download&id=1mlFYUbABFxfww8YeoLkX4Rpef9dMljU0'
-mv sample-data sample-data.bson
-mongorestore --username="admin" --password="" sample-data.bson
+curl -LO https://github.com/mattd72/camp-wk1/raw/main/data.zip?download=
+unzip data.zip
+mongorestore --username="admin" --password="" data/dump
