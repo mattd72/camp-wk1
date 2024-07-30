@@ -29,6 +29,7 @@ EOF
 
 # Install MongoDB Enterprise
 sudo yum install -y mongodb-enterprise
+sudo yum install -y mongodb-database-tools
 
 # Create the mongod.conf file
 cat <<EOF | sudo tee /etc/mongod.conf
