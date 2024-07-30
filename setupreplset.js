@@ -7,7 +7,7 @@ rs.initiate({
   ]
 })
 sleep(120000);
-use admin
+use admin;
 db.createUser({
   user: "admin",
   pwd: passwordPrompt(),
