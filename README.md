@@ -42,3 +42,12 @@
     * NOTE - Update the script with the node IP addresses or domain names
   * Wait for 120 s for replset to be initialized
   * create the admin password
+ 
+ ## Troubleshooting
+
+ * SSL error starting mongosh
+   * mongosh: OpenSSL configuration error: 001908B0DC7F0000:error:030000A9:digital envelope routines
+   * Do the following:
+     * sudo yum remove mongodb-mongosh
+     * sudo yum install mongodb-mongosh-shared-openssl3
+     * sudo yum install mongodb-mongosh
