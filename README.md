@@ -41,7 +41,7 @@
   * Wait for 120 s for replset to be initialized
   * create the admin password
 
-*importdata.sh
+* importdata.sh
   * download and unzip data.zip
   * mongoimport on the data directory 
  
