@@ -34,14 +34,16 @@
 
 * mongosetup.sh
   * start mongosh to run setupreplset.js
-  * pull down sample dataset
-  * run mongorestore against the sample dataset directory
  
 * setupreplset.js
   * Set up the replicaset
     * NOTE - Update the script with the node IP addresses or domain names
   * Wait for 120 s for replset to be initialized
   * create the admin password
+
+*importdata.sh
+  * download and unzip data.zip
+  * mongoimport on the data directory 
  
  ## Troubleshooting
 
