@@ -9,7 +9,7 @@
 
 * Create a keyfile
   * KEYFILE_CONTENT=$(openssl rand -base64 756)
-  * echo KEYFILE_CONTENT >> /opt/mongo-keyfile
+  * echo $KEYFILE_CONTENT >> /opt/mongo-keyfile
   * chmod 600 /opt/mongo-keyfile
   * copy keyfile to each node, make sure permissions and ownership are set per above
 
