@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Define the IP addresses of the replica set members
-NODE1_PRIVATE_IP="node1-private-ip"
-NODE2_PRIVATE_IP="node2-private-ip"
-NODE3_PRIVATE_IP="node3-private-ip"
 
 sudo adduser mongod
 
